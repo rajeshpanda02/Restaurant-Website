@@ -1,0 +1,793 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+/*this code for only nav bar both computer and tablet*/
+}
+.headerbar{
+    display: none;
+}
+.searchicon{
+    display: block;
+}
+.logo img{
+    width: 150px;
+
+}
+.bar{
+    display: none;
+    font-size: 18px;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    width: 100%;
+    padding: 0 7vw;
+    background-color: rgb(248,232,217);
+    border-bottom: 2ps solid rgb(252,196,124);
+    box-shadow: 0px 2px 20px rgb(242, 2, 2);
+}
+.header ul{
+    display: flex;
+    align-items: center;
+}
+.header ul li:hover{
+    color:rgb(248, 45, 5) ;
+}
+.nav ul li{
+    padding: 0 15px;
+    font-size: 14px;
+    font-weight:bold;
+    text-decoration-thickness: 0px;
+}
+.account{
+    flex:0.1;
+}
+.account ul{
+    display: flex;
+    justify-content: end;
+}
+.account ul li{
+    padding: 0 15px;
+    font-size: 20px;
+}
+.bar i:hover{
+    color: rgb(38, 255, 0);
+}
+.search{
+    display: none;
+    width: 200px;
+    justify-content: center;
+}
+.search input{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    padding: 5px;
+}
+.searchicon{
+    background-color: rgb(248,232,217);
+    display: block;
+    padding: 4px 5px;
+    cursor:pointer;
+}
+/*index page main slide decoration*/
+.home{
+    background-color: rgb(248,200,150);
+    padding: 0 7vw;
+}
+.main_slide{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+.main_slide div:nth-child(2){
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    height: 500px;
+}
+.main_slide div:nth-child(1){
+    padding-top: 20px;
+    flex: 1;
+    font-size: 20px;
+}
+.main_slide div:nth-child(1) p{
+    padding: 20px 0;
+    font-size: 15px;
+}
+.main_slide div:nth-child(1) span{
+    color: rgb(251, 3, 3);
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: orange;
+}
+.main_slide div:nth-child(1) h1{
+    font-size: 70px;
+}
+.red_btn{
+    cursor: pointer;
+    margin-top: 20px;
+    width: 200px;
+    font-weight: bold;
+    color: aliceblue;
+    line-height: 50px;
+    background-color: rgb(253,77,8);
+    border-radius: 50px;
+    border: 1px solid rgb(253,77,8);
+    box-shadow: 0 10px 15px rgb(250,120,69);
+    transition: all 1s;
+}
+.red_btn i{ 
+    color: white;
+    transition: 1s;
+}
+.red_btn:hover{
+
+    background-color: white;
+    box-shadow: 0 15px 15px black;
+    border: 1px solid rgb(253,77,8);
+    color: rgb(253,77, 8);
+}
+.red_btn:hover i{
+    color: rgb(253,77, 8);
+}
+.food_items{
+    margin: 70px 0;
+    padding: 20px 0;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.item{
+    width: 250px;
+    padding: 30px;
+    text-align: center;
+}
+.item div{
+    height: 160px;
+}
+.item img{
+    width: 160px;
+    margin-bottom: 15px;
+    height: 150px;
+}
+.item p{
+    font-size: 12px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.white_btn{
+    cursor: pointer;
+    margin-top: 20px;
+    width: 160px;
+    font-weight: bold;
+    color: rgb(250,120,69);
+    line-height: 50px;
+    background-color: whitesmoke;
+    border-radius: 50px;
+    border: 1px solid rgb(253,77,8);
+    box-shadow: 0 10px 15px rgb(250,120,69);
+    transition: all 1s;
+}
+.item .red_btn, .item .white_btn{
+    width: 120px;
+    line-height: 35px;
+}
+.white_btn:hover{
+    color: whitesmoke;
+    background-color: rgb(253,77,8);
+    box-shadow: 0 10px 15px black;
+}
+.main_slide2{
+    margin: 80px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.foodimg{
+    flex: 0.5;
+}
+.foodimg img{
+    max-width: 500px;
+    width: 45vw;
+}
+.question{
+    flex: 0.5;
+    flex-direction: column;
+    margin-left: 40px;
+}
+.question h2{
+    font-size: 35px;
+    margin-bottom: 15px;
+    color:rgb(254,68,62);
+}
+.qans{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px 15px;
+    cursor: pointer;
+}
+.qans img{
+    width: 43px;
+}
+.qans div:first-child{
+    padding: 10px;
+    border-radius: 70%;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    background-color: whitesmoke;
+    margin-right: 20px;
+}
+.qans div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+}
+.qans div:nth-child(2) p{
+    margin-top: 10px;
+    font-size: 13px;
+}
+.main_slide3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    z-index:1 ;
+}
+.main_slide3 .fav_head{
+    text-align: center;
+    width: 450px;
+    margin-bottom: 30px;
+}
+.main_slide3 .fav_head h3{
+    font-size: 30px;
+    padding: 20px 0;
+}
+.main_slide3 .fav_head p{
+    font-size: 13px;
+    text-align: center;
+}
+.main_slide3 .fav_food{
+    margin: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+}
+.main_slide3 .fav_food .item{
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 10px rgb(254, 0, 0);
+    width: 220px;
+    padding: 15px;
+    padding-top: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+.main_slide3 .fav_food .item div{
+    height: 160px;
+    margin-bottom: 15px;
+}
+.main_slide3 .fav_food .item img{
+    width: 160px;
+    margin-bottom: 15px;
+}
+.main_slide3 .fav_price{
+    color: crimson;
+    font-weight: bolder;
+    font-size: 15px;
+}
+.main_slide3 .dsgn{
+    background-color:rgb(239, 174, 174);
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    border-radius: 10px;
+}
+.main_slide4{
+    margin-top: 270px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+.main_slide4 .chef_feed{
+    flex: 0.5;
+    margin-top: 30px;
+}
+.main_slide4 .chef{
+    flex: 0.5;
+    text-align: right;
+}
+.main_slide4 .chef img{
+    margin-top: -130px;
+    width: 50vw;
+    max-width: 490px; 
+}
+.main_slide4 .chef_feed h2{
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+.main_slide4 .chef_feed p{
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 20px;
+}
+.main_slide4 .chef_detail{
+    margin-top: 20px;
+    display: 25px;
+    align-items: center;
+}
+.main_slide4 .chef_detail img{
+    width: 50px;
+    border-radius: 50px;
+    margin-right: 15px ;
+    border: 4px solid black;
+}
+.main_slide4 .chef_detail h6{
+    font-size: 14px;
+}
+.main_slide4 .chef_detail p{
+    font-size: 11px;
+    color: red;
+}
+.main_slide4 .chef_vic{
+    display: flex;
+    align-items: center ;
+    padding: 25px 20px;
+    background-color: rgba(223, 245, 191, 0.651);
+    border-radius: 0px 40px 0px 40px;
+    margin-top: 40px;
+    width: 100%;
+}
+.main_slide4 .chef_vic div{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    flex: 0.5;
+    height: 27px;
+    overflow: hidden;
+}
+.main_slide4 .chef_vic div i, .main_slide4 .chef_vic div h4{
+    font-size: 25px;
+    margin-right: 8px;
+}
+.main_slide4 .chef_vic div h4{
+    color: red;
+}
+.main_slide4 .chef_vic div p{
+    font-size: 11px;
+    padding: 10px;
+    line-height: 13px;
+}
+#feedback{
+    color: rgb(255, 0, 0);
+}
+.footer{
+    padding: 30px 150px;
+    border-top: 6px solid black;
+    border-style: groove;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(248,200,150);
+    justify-content: space-between;
+    align-items: center;
+}
+.footer_1 .logo img{
+    width: 100px;
+    padding-bottom: 20px;
+}
+.footer_1 p{
+    cursor: pointer;
+    font-size: 14px;
+    padding-top:0px ;
+    color: orangered;
+}
+.footer_2{
+    text-align: center;
+    cursor: pointer;
+}
+.footer_2 h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+.footer_2 img{
+    width: 200px;
+}
+/*about page section decoration*/
+#headingone{
+    color: orangered;
+    font-weight: bold;
+    padding-top: 100px;
+    font-size: 65px;
+}
+#headingtwo{
+    color: black;
+    font-weight: bold;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-shadow: 5px 5px 5px orangered;
+}
+.main_slide3 .fav_chef{
+    margin: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+}
+.main_slide3 .fav_chef .cheff{
+    background-color: rgb(191, 207, 204);
+    border-radius: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 10px rgb(254, 0, 0);
+    width: 270px;
+    padding: 15px;
+    padding-top: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+.main_slide3 .fav_chef .cheff div{
+    height: 250px;
+    margin-bottom: 15px;
+}
+.main_slide3 .fav_chef .cheff img{
+    width: 140px;
+    margin-bottom: 5px;
+}
+.main_slide3 .fav_chef .cheff h3{
+    color: red;
+    text-align: center;
+    padding-top: 2px;
+    font-size: 25px;
+}
+
+/*about page decoration*/
+.about_main_slide{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 100px;
+    padding-bottom: 30px;
+}
+.about_main_slide h1{
+    
+    padding-bottom: 25px;
+    color: orangered;
+    font-weight: bold;
+    
+}
+.about_main_slide p{
+    
+    padding-bottom: 25px;
+    text-align: left;
+    
+    
+}
+/*food menu page section decoration*/
+.foodmenuu{
+    padding-top: 35px;
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+    font-weight: bolder;
+    font-family:cursive ;
+    font-style: italic;
+}
+.main_slide3 .menu_item{
+    margin: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 60px;
+}
+.main_slide3 .menu_item .items{
+    background-color: rgb(245, 245, 245);
+    border-radius: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 10px rgb(230, 146, 249);
+    width: 250px;
+    text-align: center;
+    cursor: pointer;
+    
+}
+.main_slide3 .menu_item .items .itempic{
+    width: 100%;
+    height: 200px;
+    padding-top: 0;
+}
+.main_slide3 .menu_item .items .itempic img{
+    width: 100%;
+    height: 200px;
+    border-radius: 25px 25px 0px 0px;
+}
+.zoom{
+    background-color: rgb(245, 245, 245);
+    border-radius: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 10px rgb(248, 1, 1);
+    width: 250px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.1s;
+    
+}
+.zoom:hover{
+    transform: scale(1.3); 
+}
+/*it is the css code for table page decoration*/
+.book_table_home{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../public/assets/background1.jpg');
+    opacity: .9;
+}
+.table_home{
+    padding: 0;
+    width: 600px;
+    height: 560px;
+    position: absolute;
+    margin-top: 110px;
+    margin-left: 500px;
+    border-radius: 25px;
+    background-color: whitesmoke;
+}
+.thome{
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+}
+.thome_form_head{
+    display: flex;
+    justify-content: space-between;
+}
+.thome_form h1{
+    text-align: left;
+    color: orangered;
+    font-weight: bold;
+    padding:15px 0;
+    margin-left: 0px;
+    margin-right: 25px;
+}
+.thome_form label{
+    text-align: left;
+    padding-top: 7px;
+}
+.thome_form input{
+    text-align: left;
+    padding: 0 2px;
+    width: 100%;
+    height: 38px;
+    border-radius: 5px;
+}
+.thome_form div{
+    align-items: center;
+    justify-content: center;
+}
+.thome_form #btnn{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 96%;
+    border-radius: 12px;
+    border: none;
+    margin: 12px;
+    padding: 5px 2px;
+    background-color: orangered;
+    margin-top: 30px;
+    cursor: pointer;
+}
+#close{
+    color: red;
+    width: 30px;
+    font-size: 30px;
+    margin-left: 100px;
+    
+}
+/*sign up page decoration*/
+.thome_form_head2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.thome_form_head2 h1{
+    text-align: center;
+    margin-left: 5px;
+}
+.thome_form_head2 #close{
+    margin-left: 300px;
+    margin-right: 5px;
+}
+.sign_menu{
+    text-align: center;
+}
+.sign_menu a span{
+    color: orangered;
+    margin-top: 20px;
+}
+/*sign up page decoration*/
+.table_home2{
+    padding: 0;
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    margin-top: 110px;
+    margin-left: 500px;
+    border-radius: 25px;
+    background-color: whitesmoke;
+}
+/*it is the code for responsive in tablet*/
+@media only screen and (max-width:768px){
+    .header .nav, .header .account{
+        display: none;
+        
+    }
+    .search{
+        width: 60vw;
+    }
+    .bar{
+        display:block;
+        cursor: pointer;
+    }
+    .headerbar{
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        right: -100%;
+        transition:all 1.50s ;
+        background-color: rgb(223, 191, 114);
+    }
+    .headerbar .account, .headerbar .nav{
+        display: block;
+        font-size: 18px;
+    }
+    .bar .fa-xmark{
+        display:none;
+        top: 20px;
+        right: 5w;
+        position: absolute;
+        font-size: 25px;
+    }
+    .headerbar .nav ul{
+        flex-direction: column;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .headerbar .nav li{
+        width: 96vw;
+        margin: 10px 0;
+        padding: 15px 30px;
+        box-shadow: 0 2px 15px rgb(193, 183, 152);
+        font-size: 15px;
+        margin-top: 5px;
+    }
+    .headerbar .account{
+        line-height: 40px;
+        margin-top: 60px;
+        background-color:  rgb(248,232,217);
+        padding: 15px;
+    }
+    .headerbar .account ul{
+        justify-content: space-between;
+    }
+    .foodimg{
+        flex: 1;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .foodimg img{
+        width: 70vw;
+    }
+    .question{
+        flex: 1;
+        margin-top: 30px;
+    }
+    .question h2{
+        font-size: 25px;
+    }
+    .qans div:nth-child(2){
+        font-size: 11px;
+
+    }
+    .main_slide3{
+        margin-top: 100px;
+    }
+    .main_slide3 .dsgn{
+        height: 60%;
+    }
+    .main_slide3 .fav_head{
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .main_slide4{
+        margin-top: 150;
+    }
+    .main_slide4 .chef_feed{
+        flex: 1;
+    }
+    .main_slide4 .chef{
+        flex: 1;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .main_slide4 .chef img{
+        width: 40vw;
+
+    }
+
+}
+/*it is the code for responsive in mobile*/
+@media only screen and (max-width:550px){
+    .main_slide div:nth-child(1){
+        font-size: 18px;
+    }
+    .main_slide div:nth-child(1) p{
+        font-size: 11px;
+        padding-top: 5px;
+        margin: 10px 0;
+    }
+    .red_btn{
+        margin-top: 10px;
+        width: 120px;
+        line-height: 30px;
+        font-size: 12px;
+        padding: 0 10px;
+    }
+    .main_slide div:nth-child(1) span{
+        text-underline-offset: 5px;
+    }
+    .main_slide div:nth-child(2) img{
+        width: 70vw;
+    }
+    .food_items{
+        padding: 10px 0;
+    }
+    .item{
+        width: 60%;
+        padding: 30px 5px;
+    }
+    .item h3{
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    .main_slide3 .fav_head{
+        width: 10%;
+    }
+    .main_slide3 .fav_head h3{
+        font-size: 25px;
+    }
+    .main_slide3 .fav_head p{
+        font-size: 11px;
+    }
+    .main_slide3 .dsgn{
+        display: none;
+    }
+    .main_slide4 .chef_vic p{
+        display: none;
+    }
+}
+
